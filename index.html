@@ -1,0 +1,43 @@
+ <!----Document type declaration----->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css"><!---link to external stylesheet---->
+</head>
+<body>
+        <div class="quiz-container" id="quiz"> <!---main container for quiz element--->
+        <div class="quiz-header">
+          <h2 class="header-txt">Technology Quiz</h2>
+        </div>
+        <div class="quiz-body"> <!---container for the question and answer--->
+          <h2 id="question">Question Text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Questions</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Questions</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Questions</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label for="d" id="d_text">Questions</label>
+            </li>
+          </ul>
+        </div>
+        <div class="quiz-footer"> <!---container for quiz navigation---->
+          <div class="quiz-details"></div><!----Display progress or score----->
+          <button type="button" id="btn">Next</button><!---botton to proceed to the next question---->
+        </div>
+      </div>  
+    <script src="app.js"></script><!---link to external javascript---->
+</body>
+</html>
